@@ -1,5 +1,4 @@
 import type { Phase, Situation } from "@/lib/types";
-import { toEmotionalState } from "@/lib/affinity";
 
 export type PromptParams = {
   heroName: string;
@@ -9,7 +8,6 @@ export type PromptParams = {
   chosenTone?: string;
 };
 
-export function buildSionPrompt(params: PromptParams): string {
-  // TODO: implement
+export function buildSionPrompt(_params: PromptParams): string {
   throw new Error("Not implemented");
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { GameState, CharacterKey, Message, Phase } from "@/lib/types";
+import type { GameState } from "@/lib/types";
 
 const initialState: GameState = {
   heroName: "",
@@ -13,9 +13,5 @@ const initialState: GameState = {
 
 export function useGameState() {
   const [state, setState] = useState<GameState>(initialState);
-
-  // TODO: implement actions
-  // setHeroName, setCharacter, applyChoiceDelta, appendMessage, advancePhase, incrementTurn
-
   return { state, setState };
 }
