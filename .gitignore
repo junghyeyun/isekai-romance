@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# next.js
+.next/
+out/
+
+# env (API 키 절대 커밋 금지)
+.env
+.env.local
+.env*.local
+
+# build
+tsconfig.tsbuildinfo
+
+# misc
+.DS_Store
+.claude/
